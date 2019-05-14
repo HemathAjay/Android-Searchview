@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <include layout="@layout/content_main" />
+
+    <hemath.com.search.MaterialSearchBar
+        android:id="@+id/search_bar_1"
+        style="@style/MaterialSearchBarLight"
+        android:layout_margin="8dp"
+        app:mt_navIconEnabled="true"
+        app:mt_placeholder="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </hemath.com.search.MaterialSearchBar>
+
+    <RelativeLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <hemath.com.search.MaterialBackSearchBar
+            android:id="@+id/search_bar_2"
+            style="@style/MaterialSearchBarLight"
+            android:layout_margin="8dp"
+            app:mt_navIconEnabled="true"
+            app:mt_placeholder="Search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </hemath.com.search.MaterialBackSearchBar>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <hemath.com.search.MaterialBackWithoutSearchBar
+            android:id="@+id/search_bar_3"
+            style="@style/MaterialSearchBarLight"
+            android:layout_margin="8dp"
+            app:mt_navIconEnabled="true"
+            app:mt_placeholder="Search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </hemath.com.search.MaterialBackWithoutSearchBar>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
